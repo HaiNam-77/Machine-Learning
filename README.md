@@ -1,28 +1,37 @@
-# 📚 Machine Learning - Slide & Nền tảng Lý thuyết
+# 📊 Classical Machine Learning: Theory & Implementation
 
-Thư mục này tổng hợp các bài giảng, tài liệu tổng kết lý thuyết và nền tảng toán học cho các thuật toán Học máy cơ bản (Classical Machine Learning).
-
----
-
-## 📌 Danh mục tài liệu lý thuyết (Slides & Documents)
-
-### 1. [Math_foundations (2).pdf](./Math_foundations%20(2).pdf)
-- Nền tảng toán học cốt lõi cho Trí tuệ Nhân tạo & Machine Learning.
-- **Nội dung:** Đại số tuyến tính (Vectors, Matrices, Eigenvalues/Eigenvectors), Giải tích đa biến (Gradients, Partial Derivatives, Chain Rule), Xác suất & Thống kê cơ bản.
-
-### 2. [Linear_Regression.pdf](./Linear_Regression.pdf) & [Logistic_Regression.pdf](./Logistic_Regression.pdf)
-- **Hồi quy tuyến tính (Linear Regression):** Hàm mất mát MSE (Mean Squared Error), phương pháp Gradient Descent và công thức nghiệm giải tích Normal Equation.
-- **Hồi quy Logistic (Logistic Regression):** Bài toán phân loại nhị phân (Binary Classification), hàm kích hoạt Sigmoid, và hàm mất mát Binary Cross-Entropy (Log Loss).
-
-### 3. [Support_vector_machine.pdf](./Support_vector_machine.pdf)
-- **Mô hình máy vector hỗ trợ (SVM):** Khái niệm siêu phẳng tối ưu (Hyperplane), khoảng cách cực đại (Maximum Margin), Hard/Soft Margin và kỹ thuật Kernel Trick để xử lý dữ liệu phi tuyến tính.
-
-### 4. [Tree_Regression.pdf](./Tree_Regression.pdf)
-- **Cây quyết định (Decision Tree):** Tiêu chí phân chia dữ liệu, độ hỗn loạn thông tin (Entropy), Information Gain, chỉ số Gini Impurity và kỹ thuật tỉa nhánh (Pruning) để tránh overfitting.
-
-### 5. [K_means.pdf](./K_means.pdf)
-- **Thuật toán phân cụm (Clustering - Học không giám sát):** Cơ chế khởi tạo tâm cụm (Centroids), tối ưu khoảng cách Euclidean (Inertia/WCSS) và phương pháp Elbow để chọn số cụm $K$ tối ưu.
+Repository này tổng hợp toàn bộ lộ trình nghiên cứu nền tảng toán học, tài liệu lý thuyết và mã nguồn thực hành cài đặt các thuật toán Học máy kinh điển (Classical Machine Learning).
 
 ---
 
-> 💡 *Mã nguồn thực hành và cài đặt các thuật toán tương ứng được lưu trữ tại thư mục [../Code](../Code).*
+## 📂 Cấu trúc Repository
+
+- **[Code/](./Code):** Chứa toàn bộ mã nguồn thực hành và đánh giá thuật toán bằng Python (Jupyter Notebooks).
+- **[Slide/](./Slide):** Chứa slide bài giảng và tài liệu tổng hợp nền tảng toán học (PDF).
+
+---
+
+## 📌 Nội dung chi tiết các thư mục
+
+### 1. [Slide - Nền tảng Toán học & Lý thuyết](./Slide)
+Tài liệu tổng kết cơ sở toán học và cơ chế hoạt động của thuật toán:
+- **Math Foundations:** Cơ sở giải tích đa biến (Gradients, Chain Rule), Đại số tuyến tính (Vectors, Matrices, Eigenvalues) và Xác suất thống kê cơ bản.
+- **Hồi quy & Phân loại tuyến tính:** Cơ chế hàm mất mát MSE trong Linear Regression, hàm sigmoid và Binary Cross-Entropy trong Logistic Regression.
+- **Support Vector Machine (SVM):** Khái niệm siêu phẳng tối ưu (Hyperplane), khoảng cách cực đại (Margin) và kỹ thuật Kernel Trick.
+- **Cây quyết định & Học không giám sát:** Cấu trúc Decision Tree (Gini, Entropy), Ensemble Learning và thuật toán phân cụm K-Means.
+
+### 2. [Code - Cài đặt Thuật toán](./Code)
+Thực hành xây dựng và huấn luyện mô hình với Python & Scikit-learn:
+- **Linear & Polynomial Regression:** Cài đặt hồi quy tuyến tính, tối ưu hóa qua Gradient Descent và mở rộng hồi quy đa thức cho dữ liệu phi tuyến tính.
+- **Logistic Regression:** Cài đặt phân loại nhị phân, tính toán xác suất và đánh giá qua ma trận nhầm lẫn (Confusion Matrix, Precision, Recall, F1-score).
+- **Support Vector Machine (SVM):** Khảo sát các dạng Kernel (Linear, RBF), tinh chỉnh các siêu tham số $C$ và $\gamma$.
+- **Decision Tree & Random Forest:** Xây dựng mô hình cây quyết định và mô hình rừng ngẫu nhiên (Random Forest) với kỹ thuật Bagging để chống overfitting.
+
+---
+
+## 🛠️ Công nghệ & Công cụ sử dụng
+
+- **Ngôn ngữ:** Python 3
+- **Thư viện chính:** Scikit-learn, NumPy, Pandas
+- **Trực quan hóa dữ liệu:** Matplotlib, Seaborn
+- **Môi trường thực thi:** Jupyter Notebook / Google Colab
